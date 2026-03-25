@@ -1,6 +1,7 @@
 import requests
 import time
 import json
+from tqdm import tqdm
 
 TICKERS = ["NCAAMB", "NBA", "NCAAWB", "EUROLEAGUE", "CBA", "ABA", "GBL", "NBL", "ARGLNB", 
            "MLB", "NCAABB", "WTA", "ATP", "UCLW", "UCL", "NHL"]
@@ -54,10 +55,13 @@ def get_series():
 
 def main():
     market_tickers = []
+    print("Finding Series Markets...")
     series_tickers = get_series()
-    for ticker in series_tickers:
+    print("Finding All Markets...")
+    for ticker in tqdm(series_tickers):
         market_tickers = market_tickers + get_markets(ticker)
         time.sleep(0.25)
+    print()
     print(json.dumps(market_tickers, indent=2))
 
 
