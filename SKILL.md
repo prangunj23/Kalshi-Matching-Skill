@@ -6,6 +6,14 @@ description: A skill that searches Kalshi markets for arbitrage
 
 Looks for Arbitrage Opportunities in Kalshi
 
+## Step 0: Install Dependencies
+
+If you haven't installed dependencies yet (or you're in a fresh virtual environment), install them from `requirements.txt` (it's safe to re-run):
+
+```bash
+python -m pip install -r requirements.txt
+```
+
 ## Step 1: Gather the Markets
 
 Run the market fetching script that will collect all the potential markets for this task:
