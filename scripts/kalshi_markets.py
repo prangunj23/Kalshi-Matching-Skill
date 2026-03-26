@@ -3,8 +3,7 @@ import time
 import json
 from tqdm import tqdm
 
-TICKERS = ["NCAAMB", "NBA", "NCAAWB", "EUROLEAGUE", "CBA", "ABA", "GBL", "NBL", "ARGLNB", 
-           "MLB", "NCAABB", "WTA", "ATP", "UCLW", "UCL", "NHL"]
+TICKERS = ["NCAAMB", "MARMAD"]
     
 def get_markets(series_ticker):
     valid_markets = []

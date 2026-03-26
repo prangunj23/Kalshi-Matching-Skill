@@ -1,10 +1,10 @@
 ---
-name: Kalshi-Opportunity-Finding-Skill
-description: A skill that searches Kalshi markets for arbitrage
+name: Kalshi-Matching-Skill
+description: A skill that searches Kalshi markets for equal market arbitrage
 ---
-# Kalshi Matching Market Arbitrage Finding Skill
+# Kalshi Equal Market Arbitrage Finding Skill
 
-Looks for Arbitrage Opportunities in Kalshi
+Looks for Arbitrage Opportunities in Kalshi where a futures market and a game market are equal. 
 
 ## Step 0: Install Dependencies
 
